@@ -1,0 +1,38 @@
+# Neonix MCP
+
+> Neonix is an HTML-to-motion-video compiler: it turns HTML and CSS into a real, exportable motion video.
+
+Neonix MCP is the official Model Context Protocol server for Neonix. AI agents such as Claude,
+ChatGPT, and Grok connect to it over Remote MCP to create, edit, preview, and export
+motion-video projects from HTML and CSS.
+
+## FAQ
+
+Q: What is Neonix MCP?
+A: The official remote MCP server for Neonix, an HTML-to-motion-video compiler. It exposes
+tools for creating and editing video projects, authoring HTML/CSS, applying JSON patches,
+managing assets, and exporting MP4 files.
+
+Q: How do I connect to it?
+A: Add a remote MCP server pointing at https://www.neonix.video/api/mcp and sign in with OAuth
+when prompted. In Claude Code: `claude mcp add --transport http neonix https://neonix.video/api/mcp`.
+
+Q: Do I need an API key?
+A: No. Authentication is OAuth 2.1 — you sign in with your Neonix account and grant access.
+
+Q: What does the server let an agent do?
+A: Create and manage projects, read and edit HTML/CSS source, apply small JSON patches to the
+compiled document, manage assets, and export a real MP4.
+
+Q: How does Neonix turn HTML into video?
+A: You or an AI agent write HTML and CSS describing a scene. Neonix compiles it into a
+structured JSON document, which can be previewed and edited, then exports it to a real,
+downloadable MP4.
+
+## Links
+
+- Website: https://www.neonix.video
+- Docs: https://www.neonix.video/docs
+- Overview: https://www.neonix.video/overview
+- Remote MCP endpoint: https://www.neonix.video/api/mcp
+- CLI scaffolder: https://github.com/neonix-video/html-to-video
